@@ -2,11 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>ScreenStreamer</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
     <link rel="stylesheet" href="index.css">
+    <script defer src="render.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="firebase.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <h1>ScreenStreamer</h1>
+    <button id="hostBtn" class="button is-primary">Host</button><div id="hostId"></div>
+    <button id="attendeeBtn" class="button is-info">Attendee</button><div id="attendeeId"></div>
+
+    <div id="attendeeVideo"></div>
+
+    <hr />
+
+    <button id="sourceSelectBtn" class="button">Select Source</button>
+    <div id="sourceList"></div>
   </body>
 </html>
